@@ -3,8 +3,14 @@
 <head>
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
     <!--Import materialize.css-->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.2/css/materialize.css" rel="stylesheet">
+    
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -23,6 +29,8 @@
     <link rel="stylesheet" type="text/css" href="css/marquee.css">
     <link rel="stylesheet" type="text/css" href="css/marquee-promo.css">
     <link rel="stylesheet" type="text/css" href="css/sfly-faq.css">
+
+
 </head>
 
 <body>
@@ -33,26 +41,43 @@
             Shutterfly landing page component library
             <hr>
 
-            <div class="cotainer">
                 <div class="row">
                     <div class="col s12">
-                        <ul class="tabs">
-                            <li class="tab col s3"><a href="#i">info</a></li>
-                            <li class="tab col s3"><a href="#marquee">marquee</a></li>
-                            <li class="tab col s3"><a href="#3-qualities">3 Qualities</a></li>
-                            <li class="tab col s3"><a href="#text">text</a></li>
-                            <li class="tab col s3"><a href="#circle">circle</a></li>
-                            <li class="tab col s3"><a href="#Carousel">Carousel</a></li>
-                            <li class="tab col s3"><a href="#2Up">2Up</a></li>
-                            <li class="tab col s3"><a href="#3Up">3Up</a></li>
-                            <li class="tab col s3"><a href="#4Up">4Up</a></li>
-                            <li class="tab col s3"><a href="#media">media</a></li>
+                        <ul class="tabs tabs-fixed-width">
+                            <li class="tab col s12"><a href="#i">info</a></li>
+                            <li class="tab col s12"><a href="#marquee">marquee</a></li>
+                            <li class="tab col s12"><a href="#3-qualities">3 Qualities</a></li>
+                            <li class="tab col s12"><a href="#text">text</a></li>
+                            <li class="tab col s12"><a href="#circle">circle</a></li>
+                            <li class="tab col s12"><a href="#Carousel">Carousel</a></li>
+                            <li class="tab col s12"><a href="#2Up">2Up</a></li>
+                            <li class="tab col s12"><a href="#3Up">3Up</a></li>
+                            <li class="tab col s12"><a href="#4Up">4Up</a></li>
+                            <li class="tab col s12"><a href="#media">media</a></li>
                         </ul>
                     </div>
+                    
                     <div id="i" class="col s12">
-                        test
+                        <section>
+                            <div class="transition-headline-wrapper">
+                                <div class="transition highlighted-text">
+                                    <span>information</span>
+                                </div>
+                            </div>
+                        </section>
+                        - all the component here are 100% responsive <br>
+                        - all of the parameter can be changed (text / color / img ...) <br>
+                        - the component was created base on <a href="https://shutterfly.invisionapp.com/d/main?redirHash=&redirHash=&redirHash=#/projects/prototypes/18884438" style="text-decoration:none; color:#181512;">SFLY WEBSITE 2019 NEW TEMPLATE</a> ->  <br>
+
                     </div>
                     <div id="marquee" class="col s12">
+                        <section>
+                            <div class="transition-headline-wrapper">
+                                <div class="transition highlighted-text">
+                                    <span>marquee component</span>
+                                </div>
+                            </div>
+                        </section>
                         <!-- Begin Marquee Left-->
                         <section>
                             <div class="marquee marquee-left">
@@ -405,6 +430,13 @@
                         <!-- End 1Up Left Slider -->
                     </div>
                     <div id="3-qualities" class="col s12">
+                        <section>
+                            <div class="transition-headline-wrapper">
+                                <div class="transition highlighted-text">
+                                    <span>3-qualities component</span>
+                                </div>
+                            </div>
+                        </section>
                         <!-- Begin 3 Qualities -->
                         <section>
                             <div class="qualities-3-text">
@@ -465,6 +497,13 @@
                         <!-- End 3 Qualities W number -->
                     </div>
                     <div id="text" class="col s12">
+                        <section>
+                            <div class="transition-headline-wrapper">
+                                <div class="transition highlighted-text">
+                                    <span>text component</span>
+                                </div>
+                            </div>
+                        </section>
                         <!-- Begin Transitional title and subtitle -->
                         <section>
                             <div class="transition-headline-wrapper">
@@ -582,6 +621,13 @@
                         <!-- End SEO Footer-->
                     </div>
                     <div id="circle" class="col s12">
+                        <section>
+                            <div class="transition-headline-wrapper">
+                                <div class="transition highlighted-text">
+                                    <span>circle component</span>
+                                </div>
+                            </div>
+                        </section>
                         <!-- Begin 5Up - 5 to 10 items -->
                         <section>
                             <div class="sfly-5up-5-10-items">
@@ -700,6 +746,13 @@
                         <!-- End 5Up - 5 to 10 items -->
                     </div>
                     <div id="Carousel" class="col s12">
+                        <section>
+                            <div class="transition-headline-wrapper">
+                                <div class="transition highlighted-text">
+                                    <span>Carousel component</span>
+                                </div>
+                            </div>
+                        </section>
                         <!-- Begin Carousel Customer Favourite  -->
                         <section>
                             <div class="carousel-favorites carousel-wrap">
@@ -994,8 +1047,83 @@
                             </div>
                         </section>
                         <!-- End 3Up Inspiration Carousel -->
+                        
+                        
+                        <!-- //// -->
+                        <!-- new from web 2020!!! -->
+
+                        <section>
+                            <div class="carousel-favorites carousel-wrap">
+                                <div class="carousel-favorites-wrap slick-initialized slick-slider">
+                                    <div class="slick-list draggable">
+                                        <div class="slick-track" style="opacity: 1; width: 1056px; transform: translate3d(0px, 0px, 0px);">
+                                            <div class="product-content slick-slide slick-current slick-active" style="width: 264px;"
+                                                tabindex="0" data-slick-index="0" aria-hidden="false">
+                                                <picture>
+                                                    <source media="(max-width: 767px)"
+                                                        srcset="https://cdn-image.staticsfly.com/i/landingpages/2020/P265902_SY_LP_4_UP_Mod3_Notebooks.png">
+                                                    <img src="https://cdn-image.staticsfly.com/i/landingpages/2020/P265902_SY_LP_4_UP_Mod3_Notebooks.png"
+                                                        alt="NOTEBOOKS" class="loading" data-was-processed="true"></picture>
+                                                <div class="copy-inner"><span class="cta-text">NOTEBOOKS</span>
+                                                    <p>From <span class="1084060"><span class="strikethru">$18.98</span> <span
+                                                                class="salePrice">$9.49</span></span></p>
+                                                </div><a href="/photo-gifts/occ+kids--notebooks?categoryCode=1345927" tabindex="0"></a>
+                                            </div>
+                                            <div class="product-content slick-slide slick-active" style="width: 264px;" tabindex="0"
+                                                data-slick-index="1" aria-hidden="false">
+                                                <picture>
+                                                    <source media="(max-width: 767px)"
+                                                        srcset="https://cdn-image.staticsfly.com/i/landingpages/2020/P265902_SY_LP_4_UP_Mod3_Binders.png">
+                                                    <img src="https://cdn-image.staticsfly.com/i/landingpages/2020/P265902_SY_LP_4_UP_Mod3_Binders.png"
+                                                        alt="NEW BINDERS" class="loading" data-was-processed="true"></picture>
+                                                <div class="copy-inner"><span class="cta-text"><span class="cta-text-highlight">NEW</span>
+                                                        BINDERS</span>
+                                                    <p>From <span class="1403600"><span class="strikethru">$26.99</span> <span
+                                                                class="salePrice">$18.89</span></span></p>
+                                                </div><a href="/kids/school-gear/binders" tabindex="0"></a>
+                                            </div>
+                                            <div class="product-content slick-slide slick-active" style="width: 264px;" tabindex="0"
+                                                data-slick-index="2" aria-hidden="false">
+                                                <picture>
+                                                    <source media="(max-width: 767px)"
+                                                        srcset="https://cdn-image.staticsfly.com/i/landingpages/2020/P265902_SY_LP_4_UP_Mod3_PstoryBooks.jpg">
+                                                    <img src="https://cdn-image.staticsfly.com/i/landingpages/2020/P265902_SY_LP_4_UP_Mod3_PstoryBooks.jpg"
+                                                        alt="PERSONALIZED STORY BOOKS" class="loading" data-was-processed="true"></picture>
+                                                <div class="copy-inner"><span class="cta-text">PERSONALIZED<br>STORY BOOKS</span>
+                                                    <p>From <span class="1303951"><span class="strikethru">$39.99</span> <span
+                                                                class="salePrice">$29.99</span></span></p>
+                                                </div><a href="/personalized-stories/personalized-story-books" tabindex="0"></a>
+                                            </div>
+                                            <div class="product-content slick-slide slick-active" style="width: 264px;" tabindex="0"
+                                                data-slick-index="3" aria-hidden="false">
+                                                <picture>
+                                                    <source media="(max-width: 767px)"
+                                                        srcset="https://cdn-image.staticsfly.com/i/landingpages/2020/P265902_SY_LP_4_UP_Mod3_ArtKits.png">
+                                                    <img src="https://cdn-image.staticsfly.com/i/landingpages/2020/P265902_SY_LP_4_UP_Mod3_ArtKits.png"
+                                                        alt="NEW ART KITS" class="loading" data-was-processed="true"></picture>
+                                                <div class="copy-inner"><span class="cta-text"><span class="cta-text-highlight">NEW</span> ART
+                                                        KITS</span>
+                                                    <p>From <span class="1482617"><span class="strikethru">$49.99</span> <span
+                                                                class="salePrice">$34.99</span></span></p>
+                                                </div><a href="/kids/toys-games/art-kits" tabindex="0"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+
+
                     </div>
                     <div id="2Up" class="col s12">
+                        <section>
+                            <div class="transition-headline-wrapper">
+                                <div class="transition highlighted-text">
+                                    <span>2 UP component</span>
+                                </div>
+                            </div>
+                        </section>
                         <!-- Begin 2Up Right -->
                         <section>
                             <div class="sfly-2up sfly-2up-two-third sfly-2up-right">
@@ -1410,6 +1538,13 @@
                         <!-- End Module 50/50 2up-Right -->
                     </div>
                     <div id="3Up" class="col s12">
+                        <section>
+                            <div class="transition-headline-wrapper">
+                                <div class="transition highlighted-text">
+                                    <span>3 UP component</span>
+                                </div>
+                            </div>
+                        </section>
                         <!-- Begin 3Up Inspiration Stagger -->
                         <section>
                             <div class="sfly-3up sfly-3up-inspiration sfly-3up-inspiration-stagger">
@@ -1713,6 +1848,13 @@
                         <!-- End 3Up Modal Slider -->
                     </div>
                     <div id="4Up" class="col s12">
+                        <section>
+                            <div class="transition-headline-wrapper">
+                                <div class="transition highlighted-text">
+                                    <span>4 UP component</span>
+                                </div>
+                            </div>
+                        </section>
                         <!-- Begin 4Up Silos -->
                         <section>
                             <div class="sub-headlines-wrapper">
@@ -1771,6 +1913,13 @@
                         <!-- End 4Up Silos -->
                     </div>
                     <div id="media" class="col s12">
+                        <section>
+                            <div class="transition-headline-wrapper">
+                                <div class="transition highlighted-text">
+                                    <span class="">media component</span>
+                                </div>
+                            </div>
+                        </section>
                         <!-- Begin Video Left Module-->
                         <section>
                             <div class="video-left-module">
@@ -1929,7 +2078,6 @@
                     <!-- <div id="est4" class="col s12">Tab 4 Content</div> -->
                 </div>
                 <!-- Page Content goes here -->
-            </div>
         </div>
     </div>
 
@@ -1939,6 +2087,7 @@
     <script type="text/javascript"
         src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.2/js/materialize.js"></script>
 
+    <!-- script for carousel  -->
     <script type="text/javascript" src="https://cdn.staticsfly.com/i/jquery/slick/slick.min.js"></script>
 
 
