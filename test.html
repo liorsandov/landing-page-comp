@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="SHORTCUT ICON" href="https://www.shutterfly.com/favicon.ico" />
+    <title>Shutterfly</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.staticsfly.com/i/jquery/slick/slick.min.js"></script>
+    <script type="text/javascript" src="js/faq.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.staticsfly.com/i/css/font-gt-super-display.css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css" />
+    <link rel="stylesheet" type="text/css" href="css/sfly-core.css">
+    <link rel="stylesheet" type="text/css" href="css/marquee.css">
+    <link rel="stylesheet" type="text/css" href="css/marquee-promo.css">
+    <link rel="stylesheet" type="text/css" href="css/sfly-faq.css">
+    <link rel="stylesheet" type="text/css" href="css/general-for-pages.css">
+</head>
+<!-- <meta bob include-fragment app="uigfonts">
+    <div id="header_container_element"></div>
+    <meta bob include-fragment app="universal-header" fragment-name="main-ssr"> -->
+
+<div class="responsiveNonConflictingWrapper" style="width: 100% !important;">
+    <div id="template-wrap">
+
+        Shutterfly landing page component library
+        <hr>
+
+        <script type="text/javascript">
+            function changeImg(image) {
+                var imghol = document.getElementById("imageHolder");
+                imghol.src = image;
+            }
+
+            function togBlock() {
+                var marquee = document.getElementById("pr10-c");
+                if (marquee.style.display == 'block') {
+                    marquee.style.display = 'none'
+                } else {
+                    marquee.style.display == 'none';
+                    marquee.style.display = 'block'
+                }
+            }
+            function togBlockS() {
+                var marquee = document.getElementById("pr11-c");
+                if (marquee.style.display == 'block') {
+                    marquee.style.display = 'none'
+                } else {
+                    marquee.style.display == 'none';
+                    marquee.style.display = 'block'
+                }
+            }
+
+        </script>
+
+        <div class="sfly-main-window">
+            <!-- left window -->
+            <div class="sfly-left-window">
+                <div class="component-raw">
+                    <span class="rectangular-cta" onclick="togBlock();">marquee1</span>
+                    <a href="./component/marquees.html" class="rectangular-cta-green">></a>
+                </div>
+                <div class="component-raw">
+                    <span class="rectangular-cta" onclick="togBlockS();">marquee2</span>
+                    <a href="./component/marquees.html" class="rectangular-cta-green">></a>
+                </div>
+            </div>
+            <!-- right window -->
+            <div class="sfly-right-window">
+                <div>
+                    <div id="pr10-c" class="marquee marquee-right-functional hidden"></div>
+
+                    <div id="pr11-c" class="marquee marquee-right-functional hidden"></div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col s12">
+              <ul class="tabs">
+                <li class="tab col s3"><a href="#test1">Test 1</a></li>
+                <li class="tab col s3"><a class="active" href="#test2">Test 2</a></li>
+                <li class="tab col s3 disabled"><a href="#test3">Disabled Tab</a></li>
+                <li class="tab col s3"><a href="#test4">Test 4</a></li>
+              </ul>
+            </div>
+            <div id="test1" class="col s12">Test 1</div>
+            <div id="test2" class="col s12">Test 2</div>
+            <div id="test3" class="col s12">Test 3</div>
+            <div id="test4" class="col s12">Test 4</div>
+        </div>
+
+        <section id="pr11" class="hidden">
+            <!-- Begin Marquee Left-->
+            <section>
+                <div class="marquee marquee-left">
+                    <picture>
+                        <source media="(max-width: 767px)" srcset="images/marquee-m-bg.jpg">
+                        <source media="(max-width: 991px)"
+                            srcset="images/marquee-m-bg.jpg?impolicy=resize&amp;width=991">
+                        <source media="(max-width: 1200px)"
+                            srcset="images/marquee-bg.jpg?impolicy=resize&amp;width=1200">
+                        <img src="images/marquee-bg.jpg" style="width:100%" alt="" class="loaded"
+                            data-was-processed="true">
+                    </picture>
+                    <div class="marquee-inner">
+                        <div class="marquee-copy left">
+                            <div class="copy-inner">
+                                <p class="top-paragraph">THIS HOLIDAY, ANYTHING FLYS<sup class="tm">™</sup></p>
+                                <h2 class="font-light">Any <span class="font-gt">lorem ipsum <span
+                                            class="h2-second">dolor thing</span></span></h2>
+                                <p class="btm-paragraph">Lorem ipsum dolor sit amet, consectetur <br>adipiscing elit,
+                                    sed do eiusmod tempor.</p>
+                                <div class="cta-row">
+                                    <a href="" class="cta-button"><span class="rectangular-cta">CTA</span></a>
+                                    <a href="" class="cta-button"><span class="rectangular-cta">CTA</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End Marquee Left-->
+
+            <!-- Begin Marquee Right-->
+            <section>
+                <div class="marquee marquee-right">
+                    <picture>
+                        <source media="(max-width: 767px)" srcset="images/marquee-m-bg.jpg">
+                        <source media="(max-width: 991px)"
+                            srcset="images/marquee-m-bg.jpg?impolicy=resize&amp;width=991">
+                        <source media="(max-width: 1200px)"
+                            srcset="images/marquee-bg.jpg?impolicy=resize&amp;width=1200">
+                        <img src="images/marquee-bg.jpg" style="width:100%" alt="" class="loaded"
+                            data-was-processed="true">
+                    </picture>
+                    <div class="marquee-inner">
+                        <div class="marquee-copy">
+                            <div class="copy-inner">
+                                <p class="top-paragraph">THIS HOLIDAY, ANYTHING FLYS<sup class="tm">™</sup></p>
+                                <h2 class="font-light">Any <span class="font-gt">lorem ipsum <span
+                                            class="h2-second">dolor thing</span></span></h2>
+                                <p class="btm-paragraph">Lorem ipsum dolor sit amet, consectetur <br>adipiscing elit,
+                                    sed do eiusmod tempor.</p>
+                                <div class="cta-row">
+                                    <a href="" class="cta-button"><span class="rectangular-cta">CTA</span></a>
+                                    <a href="" class="cta-button"><span class="rectangular-cta">CTA</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <a href="" class="full-link"></a> -->
+                </div>
+            </section>
+            <!-- End Marquee Right-->
+
+            <!-- Begin Marquee Center-->
+            <section>
+                <div class="marquee marquee-center">
+                    <picture>
+                        <source media="(max-width: 767px)" srcset="images/marquee-m-bg.jpg">
+                        <source media="(max-width: 991px)"
+                            srcset="images/marquee-m-bg.jpg?impolicy=resize&amp;width=991">
+                        <source media="(max-width: 1200px)"
+                            srcset="images/marquee-bg.jpg?impolicy=resize&amp;width=1200">
+                        <img src="images/marquee-bg.jpg" style="width:100%" alt="" class="loaded"
+                            data-was-processed="true">
+                    </picture>
+                    <div class="marquee-inner">
+                        <div class="marquee-copy">
+                            <div class="copy-inner">
+                                <p class="top-paragraph">THIS HOLIDAY, ANYTHING FLYS<sup class="tm">™</sup></p>
+                                <h2 class="font-light">Any <span class="font-gt">lorem ipsum <span
+                                            class="h2-second">dolor thing</span></span></h2>
+                                <p class="btm-paragraph">Lorem ipsum dolor sit amet, consectetur <br>adipiscing elit,
+                                    sed do eiusmod tempor.</p>
+                                <div class="cta-row">
+                                    <a href="" class="cta-button"><span class="rectangular-cta">CTA</span></a>
+                                    <a href="" class="cta-button"><span class="rectangular-cta">CTA</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <a href="" class="full-link"></a> -->
+                </div>
+            </section>
+            <!-- End Marquee Center -->
+
+            <!-- Begin Marquee Left Functional -->
+            <section>
+                <div class="marquee marquee-left-functional">
+                    <picture>
+                        <source media="(max-width: 767px)" srcset="images/marquee-m-bg.jpg">
+                        <source media="(max-width: 991px)"
+                            srcset="images/marquee-m-bg.jpg?impolicy=resize&amp;width=991">
+                        <source media="(max-width: 1200px)"
+                            srcset="images/marquee-bg.jpg?impolicy=resize&amp;width=1200">
+                        <img src="images/marquee-bg.jpg" style="width:100%" alt="" class="loaded"
+                            data-was-processed="true">
+                    </picture>
+                    <div class="marquee-inner">
+                        <div class="marquee-copy left">
+                            <div class="copy-inner">
+                                <h2 class="uppercase font-light">LOREM IPSUM <br> DOLOR SIT AMET</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit, sed do eiusmod tempor.
+                                </p>
+                                <div class="cta-row">
+                                    <a href="" class="cta-button"><span class="rectangular-cta">CTA</span></a>
+                                    <a href="" class="cta-button"><span class="rectangular-cta">CTA</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <a href="" class="full-link"></a> -->
+                </div>
+            </section>
+            <!-- End Marquee Left Functional -->
+
+            <!-- Begin Marquee Right Functional -->
+            <section>
+                <div class="marquee marquee-right-functional">
+                    <picture>
+                        <source media="(max-width: 767px)" srcset="images/marquee-m-bg.jpg">
+                        <source media="(max-width: 991px)"
+                            srcset="images/marquee-m-bg.jpg?impolicy=resize&amp;width=991">
+                        <source media="(max-width: 1200px)"
+                            srcset="images/marquee-bg.jpg?impolicy=resize&amp;width=1200">
+                        <img src="images/marquee-bg.jpg" style="width:100%" alt="" class="loaded"
+                            data-was-processed="true">
+                    </picture>
+                    <div class="marquee-inner">
+                        <div class="marquee-copy rigth">
+                            <div class="copy-inner">
+                                <h2 class="uppercase font-light">LOREM IPSUM <br> DOLOR SIT AMET</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit, sed do eiusmod tempor.
+                                </p>
+                                <div class="cta-row">
+                                    <a href="" class="cta-button"><span class="rectangular-cta">CTA</span></a>
+                                    <a href="" class="cta-button"><span class="rectangular-cta">CTA</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <a href="" class="full-link"></a> -->
+                </div>
+            </section>
+            <!-- End Marquee Right Functional -->
+
+            <!-- Begin Marquee Center Functional -->
+            <section>
+                <div class="marquee marquee-center-functional">
+                    <picture>
+                        <source media="(max-width: 767px)" srcset="images/marquee-m-bg.jpg">
+                        <source media="(max-width: 991px)"
+                            srcset="images/marquee-m-bg.jpg?impolicy=resize&amp;width=991">
+                        <source media="(max-width: 1200px)"
+                            srcset="images/marquee-bg.jpg?impolicy=resize&amp;width=1200">
+                        <img src="images/marquee-bg.jpg" style="width:100%" alt="" class="loaded"
+                            data-was-processed="true">
+                    </picture>
+                    <div class="marquee-inner">
+                        <div class="marquee-copy">
+                            <div class="copy-inner">
+                                <h2 class="uppercase font-light">LOREM IPSUM <br> DOLOR SIT AMET</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit, sed do eiusmod tempor.
+                                </p>
+                                <div class="cta-row">
+                                    <a href="" class="cta-button"><span class="rectangular-cta">CTA</span></a>
+                                    <a href="" class="cta-button"><span class="rectangular-cta">CTA</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <a href="" class="full-link"></a> -->
+                </div>
+            </section>
+        </section>
+        <!-- marquee -->
+        <section>
+            <div id="pr10" class="marquee marquee-right-functional hidden">
+                <picture>
+                    <source media="(max-width: 767px)" srcset="images/marquee-m-bg.jpg">
+                    <source media="(max-width: 991px)" srcset="images/marquee-m-bg.jpg?impolicy=resize&amp;width=991">
+                    <source media="(max-width: 1200px)" srcset="images/marquee-bg.jpg?impolicy=resize&amp;width=1200">
+                    <img src="images/marquee-bg.jpg" style="width:100%" alt="" class="loaded" data-was-processed="true">
+                </picture>
+                <div class="marquee-inner">
+                    <div class="marquee-copy rigth">
+                        <div class="copy-inner">
+                            <h2 class="uppercase font-light">LOREM IPSUM <br> DOLOR SIT AMET</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit, sed do eiusmod tempor.</p>
+                            <div class="cta-row">
+                                <a href="" class="cta-button"><span class="rectangular-cta">CTA</span></a>
+                                <a href="" class="cta-button"><span class="rectangular-cta">CTA</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <a href="" class="full-link"></a> -->
+            </div>
+        </section>
+
+        <!-- Begin Marquee Left-->
+        <section>
+            <div id="pr10" class="marquee marquee-left hidden">
+                <picture>
+                    <source media="(max-width: 767px)" srcset="images/marquee-m-bg.jpg">
+                    <source media="(max-width: 991px)" srcset="images/marquee-m-bg.jpg?impolicy=resize&amp;width=991">
+                    <source media="(max-width: 1200px)" srcset="images/marquee-bg.jpg?impolicy=resize&amp;width=1200">
+                    <img src="images/marquee-bg.jpg" style="width:100%" alt="" class="loaded" data-was-processed="true">
+                </picture>
+                <div class="marquee-inner">
+                    <div class="marquee-copy left">
+                        <div class="copy-inner">
+                            <p class="top-paragraph">THIS HOLIDAY, ANYTHING FLYS<sup class="tm">™</sup></p>
+                            <h2 class="font-light">Any <span class="font-gt">lorem ipsum <span class="h2-second">dolor
+                                        thing</span></span></h2>
+                            <p class="btm-paragraph">Lorem ipsum dolor sit amet, consectetur <br>adipiscing elit, sed do
+                                eiusmod tempor.</p>
+                            <div class="cta-row">
+                                <a href="" class="cta-button"><span class="rectangular-cta">CTA</span></a>
+                                <a href="" class="cta-button"><span class="rectangular-cta">CTA</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Marquee Left-->
+
+        <!-- Begin Marquee Right-->
+        <section>
+            <div class="marquee marquee-right hidden">
+                <picture>
+                    <source media="(max-width: 767px)" srcset="images/marquee-m-bg.jpg">
+                    <source media="(max-width: 991px)" srcset="images/marquee-m-bg.jpg?impolicy=resize&amp;width=991">
+                    <source media="(max-width: 1200px)" srcset="images/marquee-bg.jpg?impolicy=resize&amp;width=1200">
+                    <img src="images/marquee-bg.jpg" style="width:100%" alt="" class="loaded" data-was-processed="true">
+                </picture>
+                <div class="marquee-inner">
+                    <div class="marquee-copy">
+                        <div class="copy-inner">
+                            <p class="top-paragraph">THIS HOLIDAY, ANYTHING FLYS<sup class="tm">™</sup></p>
+                            <h2 class="font-light">Any <span class="font-gt">lorem ipsum <span class="h2-second">dolor
+                                        thing</span></span></h2>
+                            <p class="btm-paragraph">Lorem ipsum dolor sit amet, consectetur <br>adipiscing elit, sed do
+                                eiusmod tempor.</p>
+                            <div class="cta-row">
+                                <a href="" class="cta-button"><span class="rectangular-cta">CTA</span></a>
+                                <a href="" class="cta-button"><span class="rectangular-cta">CTA</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <a href="" class="full-link"></a> -->
+            </div>
+        </section>
+        <!-- End Marquee Right-->
+
+        <!-- Begin Marquee Center-->
+        <section>
+            <div class="marquee marquee-center hidden">
+                <picture>
+                    <source media="(max-width: 767px)" srcset="images/marquee-m-bg.jpg">
+                    <source media="(max-width: 991px)" srcset="images/marquee-m-bg.jpg?impolicy=resize&amp;width=991">
+                    <source media="(max-width: 1200px)" srcset="images/marquee-bg.jpg?impolicy=resize&amp;width=1200">
+                    <img src="images/marquee-bg.jpg" style="width:100%" alt="" class="loaded" data-was-processed="true">
+                </picture>
+                <div class="marquee-inner">
+                    <div class="marquee-copy">
+                        <div class="copy-inner">
+                            <p class="top-paragraph">THIS HOLIDAY, ANYTHING FLYS<sup class="tm">™</sup></p>
+                            <h2 class="font-light">Any <span class="font-gt">lorem ipsum <span class="h2-second">dolor
+                                        thing</span></span></h2>
+                            <p class="btm-paragraph">Lorem ipsum dolor sit amet, consectetur <br>adipiscing elit, sed do
+                                eiusmod tempor.</p>
+                            <div class="cta-row">
+                                <a href="" class="cta-button"><span class="rectangular-cta">CTA</span></a>
+                                <a href="" class="cta-button"><span class="rectangular-cta">CTA</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <a href="" class="full-link"></a> -->
+            </div>
+        </section>
+        <!-- End Marquee Center -->
+
+        <!-- Begin Marquee Left Functional -->
+        <section>
+            <div class="marquee marquee-left-functional hidden">
+                <picture>
+                    <source media="(max-width: 767px)" srcset="images/marquee-m-bg.jpg">
+                    <source media="(max-width: 991px)" srcset="images/marquee-m-bg.jpg?impolicy=resize&amp;width=991">
+                    <source media="(max-width: 1200px)" srcset="images/marquee-bg.jpg?impolicy=resize&amp;width=1200">
+                    <img src="images/marquee-bg.jpg" style="width:100%" alt="" class="loaded" data-was-processed="true">
+                </picture>
+                <div class="marquee-inner">
+                    <div class="marquee-copy left">
+                        <div class="copy-inner">
+                            <h2 class="uppercase font-light">LOREM IPSUM <br> DOLOR SIT AMET</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit, sed do eiusmod tempor.</p>
+                            <div class="cta-row">
+                                <a href="" class="cta-button"><span class="rectangular-cta">CTA</span></a>
+                                <a href="" class="cta-button"><span class="rectangular-cta">CTA</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <a href="" class="full-link"></a> -->
+            </div>
+        </section>
+        <!-- End Marquee Left Functional -->
+
+        <!-- Begin Marquee Right Functional -->
+        <section>
+            <div class="marquee marquee-right-functional hidden">
+                <picture>
+                    <source media="(max-width: 767px)" srcset="images/marquee-m-bg.jpg">
+                    <source media="(max-width: 991px)" srcset="images/marquee-m-bg.jpg?impolicy=resize&amp;width=991">
+                    <source media="(max-width: 1200px)" srcset="images/marquee-bg.jpg?impolicy=resize&amp;width=1200">
+                    <img src="images/marquee-bg.jpg" style="width:100%" alt="" class="loaded" data-was-processed="true">
+                </picture>
+                <div class="marquee-inner">
+                    <div class="marquee-copy rigth">
+                        <div class="copy-inner">
+                            <h2 class="uppercase font-light">LOREM IPSUM <br> DOLOR SIT AMET</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit, sed do eiusmod tempor.</p>
+                            <div class="cta-row">
+                                <a href="" class="cta-button"><span class="rectangular-cta">CTA</span></a>
+                                <a href="" class="cta-button"><span class="rectangular-cta">CTA</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <a href="" class="full-link"></a> -->
+            </div>
+        </section>
+        <!-- End Marquee Right Functional -->
+
+        <!-- Begin Marquee Center Functional -->
+        <section>
+            <div class="marquee marquee-center-functional hidden">
+                <picture>
+                    <source media="(max-width: 767px)" srcset="images/marquee-m-bg.jpg">
+                    <source media="(max-width: 991px)" srcset="images/marquee-m-bg.jpg?impolicy=resize&amp;width=991">
+                    <source media="(max-width: 1200px)" srcset="images/marquee-bg.jpg?impolicy=resize&amp;width=1200">
+                    <img src="images/marquee-bg.jpg" style="width:100%" alt="" class="loaded" data-was-processed="true">
+                </picture>
+                <div class="marquee-inner">
+                    <div class="marquee-copy">
+                        <div class="copy-inner">
+                            <h2 class="uppercase font-light">LOREM IPSUM <br> DOLOR SIT AMET</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit, sed do eiusmod tempor.</p>
+                            <div class="cta-row">
+                                <a href="" class="cta-button"><span class="rectangular-cta">CTA</span></a>
+                                <a href="" class="cta-button"><span class="rectangular-cta">CTA</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <a href="" class="full-link"></a> -->
+            </div>
+        </section>
+
+
+
+
+        <script>
+            $(document).ready(function () {
+                document.getElementById("pr10-c").innerHTML = document.getElementById("pr10").innerHTML;
+                document.getElementById("pr11-c").innerHTML = document.getElementById("pr11").innerHTML;
+            })
+            var instance = M.Tabs.init(el, options);
+
+// Or with jQuery
+
+$(document).ready(function(){
+  $('.tabs').tabs();
+});
+
+        </script>
+    </div>
+</div>
+
+<!-- <meta bob include-fragment app="universal-header" fragment-name="footer"> -->
+
+<body>
+</body>
+
+</html>

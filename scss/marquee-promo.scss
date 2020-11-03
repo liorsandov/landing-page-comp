@@ -1,0 +1,153 @@
+@import "base-variable";
+@import "mixins";
+
+.sfly-marquee-promo {
+    @include flex-container();
+    position: relative;
+    align-items: stretch;
+
+    @media screen and (max-width: 991px) {
+        display: contents;
+    }
+
+    .sfly-marquee-img-promo-block {
+        width: 66.6%;
+        height: auto;
+        
+        @media screen and (max-width: 991px){
+            width: 100%;
+        }
+    }
+    
+    .sfly-marquee-promo-block {
+        width: 33.3%;
+        
+        @media screen and (max-width: 1200px){
+            height: auto;
+        }
+
+        @media screen and (max-width: 991px){
+            width: 100%;
+        }
+    }
+
+    .content-block {
+        background: repeating-linear-gradient(-45deg, 
+        #6969691a 8px 10px,
+        transparent 10px 15px);
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .promo-content-title{
+        font-size:1.200em;
+        line-height: 1.108em;
+        color: $base-sfly-color;
+        letter-spacing: 0.0576em;
+        margin: 0em 4em 0em 4em;
+        font-weight: 400;
+
+
+        @media screen and (max-width: 1600px){
+            font-size: 0.800em;
+        } 
+
+        @media screen and (max-width: 1400px){
+            font-size: 0.750em;
+        }
+
+        @media screen and (max-width: 1200px){
+            margin: 0em 3.5em 0em 3.5em;
+            line-height: 0.9615em;
+            font-weight: 400;
+        }
+
+        @media screen and (max-width: 991px){
+            font-size: 1.408em;
+            line-height: 1.108em;
+            color: $base-sfly-color;
+            font-weight: 300;
+            margin: 1em 1.5em 1em 1.5em;
+        }
+
+        @media screen and (max-width: 768px){
+            line-height: 1.308em;
+            color: $base-sfly-color;
+        }
+        
+    }
+
+    .p-promo {
+        
+        color: $marquee-promo-p-color;
+        font-size: 0.690em;
+        font-weight: bold;
+        letter-spacing: 0.5px;
+        line-height: 0.9230em;
+        text-align: center;
+        
+
+        @media screen and (max-width: 1600px){
+            font-size: 0.490em;
+        }
+
+        @media screen and (max-width: 1400px){
+            font-size: 0.390em;
+        }
+
+        @media screen and (max-width: 991px){
+            font-size: 0.8323em;
+            margin-bottom: 0.5em;
+        }
+
+        .marquee-promo-code-after{
+
+            @media screen and (max-width: 320px){
+                display: block;
+            }    
+        }
+    }
+
+    .p-date {
+        color: $base-color-black;
+        font-size: 0.6462em;
+
+        @media screen and (max-width: 1400px){
+            font-size: 0.530em;
+        }
+
+        @media screen and (max-width: 991px){
+            font-size: 0.84162em;
+            margin-bottom: 1.5em;
+        }
+
+        @media screen and (max-width: 480px){
+            font-size: 1em;
+            margin-bottom: 1em;
+        }
+        
+    }
+    
+    .p-offer{
+        color: $base-color;
+        font-size: 0.500em;
+        line-height: 19px;
+        text-align: center;
+        
+        @media screen and (max-width: 991px){
+            font-size: 0.700em;
+        }
+        
+        @media screen and (max-width: 991px){
+            margin-bottom: 1em;
+        }
+    }
+
+    .cta-wrap {
+        margin-top: 1.2em;
+    }
+
+}

@@ -1,0 +1,277 @@
+@import "base-variable";
+
+.marquee {
+    position: relative;
+    margin-bottom: 2.083em;
+    color: $base-color-black;
+
+    @media screen and (max-width: 768px) {
+        background: transparent;
+
+        h2,p, span:not(.rectangular-cta){
+            color: $base-color-black;
+        }
+    }
+
+    .marquee-inner {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+        @media screen and (max-width: 991px) {
+            position: relative;
+            text-align: center;
+            background: transparent ;
+        }
+
+        .marquee-copy {
+            padding: 1.9615em 3.2692em;
+
+            @media screen and (max-width: 1600px) {
+                padding: 1.7386em 2.9556em;
+            }
+
+            @media screen and (max-width: 1200px) {
+                padding: 1.4224em 1.7683em;
+            }
+
+            @media screen and (max-width: 768px) {
+                padding: 1.4224em 0.4789em;
+            }
+
+            h2 {
+                font-size: $marquee-title-size;
+                line-height: 1.07em;
+                margin-bottom: 25px;
+
+                @media screen and (max-width: 1600px) {
+                    font-size: 1.5995em;
+                    margin-bottom: 20px;
+                }
+
+                @media screen and (max-width: 1200px) {
+                    font-size: 1.7683em;
+                }
+
+                @media screen and (max-width: 991px) {
+                    font-size: 2.5505em;
+                    margin-bottom: 30px;
+                }
+
+                @media screen and (max-width: 768px) {
+                    font-size: 1.9156em;
+                }
+
+                @media screen and (max-width: 480px) {
+                    font-size: 1.8889em;
+                }
+            }
+
+            p {
+                color: $base-color-black;
+                @media screen and (max-width: 1600px) {
+                    font-size: 0.7998em;
+
+                }
+                @media screen and (max-width: 1200px) {
+                    font-size: 0.8842em;
+                    line-height: $font-m;
+                }
+
+                @media screen and (max-width: 991px) {
+                    font-size: 1.4416em;
+                    line-height: $font-m;
+                }
+
+                @media screen and (max-width: 768px) {
+                    font-size: 0.862em;
+                }
+
+                @media screen and (max-width: 480px) {
+                    font-size: 0.8889em;
+                }
+            }
+        }
+    }
+
+    .cta-row {
+        margin-top: 40px;
+        min-height: 40px;
+
+        .cta-button {
+            margin-right: 25px;
+
+            @media screen and (max-width: 1600px) {
+                font-size: 0.904em;
+            }
+            
+            @media screen and (max-width: 1200px) {
+                font-size: 1.1056em;
+            }
+
+            @media screen and (max-width: 991px) {
+                font-size: 1.3038em;
+            }
+
+            @media screen and (max-width: 768px) {
+                margin-right: 0;
+                display: block;
+                margin-bottom: 30px;
+
+                &:last-of-type {
+                    margin-bottom: 0;
+                }
+            }
+
+            &:last-of-type {
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+.marquee-right-functional {
+    .marquee-inner {
+        right: 0;
+        text-align: right;
+
+        @media screen and (max-width: 991px) {
+            text-align: center;
+        }
+    }
+}
+
+.marquee-center-functional {
+    .marquee-inner {
+        right: 0;
+        text-align: center;
+        
+        @media screen and (max-width: 991px) {
+            text-align: center;
+        }
+    }
+}
+
+@mixin marquee-2 {
+    .marquee-inner {
+
+        .marquee-copy {
+            padding: 2.308em 3.269em;
+
+            @media screen and (max-width: 1600px) {
+                padding: 2.115em 3.269em;
+            }
+
+            @media screen and (max-width: 1400px) {
+                padding: 1.846em 3.269em;
+            }
+
+            @media screen and (max-width: 1200px) {
+                padding: 0.9615em 1.769em;
+            }
+        }
+    }
+
+    .top-paragraph {
+        font-size: 1.038em;
+        line-height: 1.269em;
+
+        @media screen and (max-width: 1200px) {
+            font-size: $section-heading-size;
+            line-height: 0.9231em;
+        }
+
+    }
+    
+    .tm {
+        font-size: 0.6077em;
+        line-height: 0.3846em;
+        letter-spacing: 0.6px;
+    }
+
+    h2 {
+        font-size: $marquee-title-2-size;
+        line-height: 1.085em;
+        margin-bottom: 0.3546em;
+
+        @media screen and (max-width: 1400px) {
+            font-size: 1.538em;
+            line-height: 1.246em;
+        }
+
+    }
+    
+    .h2-second {
+        display: block;
+    }
+
+    .btm-paragraph {
+        font-size: $font-m;
+        line-height: 1.231em;
+        padding: 0.5em 0 0.8em 0;
+
+        @media screen and (max-width: 1600px) {
+            font-size: 0.8846em;
+            line-height: 1.077em;
+        }
+        @media screen and (max-width: 1200px) {
+            font-size: 0.588em;
+            line-height: 0.729em;
+        }
+        @media screen and (max-width: 991px) {
+            font-size: 0.8846em;
+            line-height: 1.077em;
+        }
+        @media screen and (max-width: 767px) {
+            font-size: 0.8846em;
+            line-height: 1.077em;
+        }
+    }
+
+    .black-para{
+        color: $base-color-black;
+    }
+
+    .btm-paragraph-2{
+        font-size: 0.658em;
+        padding-top: 0.5em;
+        color: $base-color-black;
+
+        @media screen and (max-width: 991px) {
+            font-size: 1.274em;
+            line-height: 1.077em;
+        }
+        @media screen and (min-width: 1599px) {
+            font-size: 1.04em;
+            line-height: 1.077em;
+            font-weight: 200;
+        }
+        @media screen and (max-width: 767px) {
+            font-size: 0.874em;
+        }
+    }
+}
+
+.marquee-left {
+    @include marquee-2;
+}
+
+.marquee-right {
+    @include marquee-2;
+    .marquee-inner {
+        text-align: right;
+        
+        @media screen and (max-width: 991px) {
+            text-align: center;
+        }
+    }
+}
+
+.marquee-center {
+    @include marquee-2;
+    .marquee-inner {
+        text-align: center;
+    }
+}

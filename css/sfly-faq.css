@@ -1,0 +1,91 @@
+.sfly-faqs {
+  max-width: 1600px;
+  margin: 0 3.8462em;
+  text-align: left;
+  padding-bottom: 1em;
+  cursor: pointer; }
+  @media screen and (max-width: 1600px) {
+    .sfly-faqs {
+      margin: 0 3.4772em; } }
+  @media screen and (max-width: 1200px) {
+    .sfly-faqs {
+      margin: 0 1.999em; } }
+  @media screen and (max-width: 991px) {
+    .sfly-faqs {
+      margin: 0 2.7168em; } }
+  @media screen and (max-width: 768px) {
+    .sfly-faqs {
+      margin: 0 1.9172em; } }
+  @media screen and (max-width: 480px) {
+    .sfly-faqs {
+      margin: 0 1.1111em; } }
+  .sfly-faqs h1 {
+    font-size: 47px;
+    line-height: 52px;
+    margin: 0 0 0.7234em 0;
+    color: #000000;
+    text-align: center;
+    font-weight: 400; }
+    @media screen and (max-width: 1600px) {
+      .sfly-faqs h1 {
+        margin: 0 0 0.7234em 0; } }
+    @media screen and (max-width: 768px) {
+      .sfly-faqs h1 {
+        font-size: 30px;
+        line-height: 34px;
+        margin: 0 0 1.1333em 0; } }
+  .sfly-faqs .nowrap {
+    white-space: nowrap; }
+  .sfly-faqs .sfly-faq-arrow {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background: transparent url("https://cdn-image.staticsfly.com/i/landingpages/2017/P54948_tpb_address_arrow_sprite.jpg") no-repeat 0 0;
+    margin-left: 0.625em;
+    position: relative;
+    top: 0.08333em; }
+
+.sfly-faq-question, .sfly-faq-answer {
+  font-size: 26px;
+  line-height: 30px;
+  letter-spacing: 0.05em;
+  font-weight: 400;
+  text-align: left;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start; }
+  @media screen and (max-width: 768px) {
+    .sfly-faq-question, .sfly-faq-answer {
+      font-size: 18px;
+      line-height: 22px; } }
+
+.sfly-faq-question {
+  color: #000000;
+  margin-bottom: 0.5769em; }
+  @media screen and (max-width: 1200px) {
+    .sfly-faq-question {
+      margin-bottom: 0.5769em; } }
+  @media screen and (max-width: 768px) {
+    .sfly-faq-question {
+      margin-bottom: 0.8333em; } }
+
+.sfly-faq-answer {
+  color: #929497;
+  margin-bottom: 1em; }
+  @media screen and (max-width: 1600px) {
+    .sfly-faq-answer {
+      margin-bottom: 1.8077em; } }
+  @media screen and (max-width: 1200px) {
+    .sfly-faq-answer {
+      margin-bottom: 0.5769em; } }
+  @media screen and (max-width: 768px) {
+    .sfly-faq-answer {
+      margin-bottom: 0.8333em; } }
+  .sfly-faq-answer div p {
+    margin: 0; }
+    .sfly-faq-answer div p strong {
+      font-weight: 600;
+      color: #000; }
+  .sfly-faq-answer div a {
+    color: #000;
+    text-decoration: underline; }

@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="SHORTCUT ICON" href="https://www.shutterfly.com/favicon.ico"/>
+    <title>Shutterfly</title>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.staticsfly.com/i/jquery/slick/slick.min.js"></script>
+    <script type="text/javascript" src="js/faq.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.staticsfly.com/i/css/font-gt-super-display.css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="css/sfly-core.css">
+    <link rel="stylesheet" type="text/css" href="css/marquee.css">
+    <link rel="stylesheet" type="text/css" href="css/marquee-promo.css">
+    <link rel="stylesheet" type="text/css" href="css/sfly-faq.css">
+    </head>
+    <!-- <meta bob include-fragment app="uigfonts">
+    <div id="header_container_element"></div>
+    <meta bob include-fragment app="universal-header" fragment-name="main-ssr"> -->
+
+    <div class="responsiveNonConflictingWrapper" style="width: 100% !important;">
+        <div id="template-wrap">
+
+            <!-- Begin Modal Popup -->
+            <section>
+                <div class="cta-row">
+                    <a class="cta-button" onclick="openModal()"><span class="rectangular-cta">SHOW MODAL POPUP</span></a>
+                </div>
+                <div id="products-modal" class="modal">
+                    <div class="modal-content">
+                        <span id="modalCloseBtn" class="modal-close">&times;</span>
+                        <div>
+                            <div class="transition-headline-wrapper">
+                                <div class="transition">
+                                    <h2>Make it your own</h2>
+                                    <p>Choose a material that fits your style.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sfly-2up sfly-3up-modal">
+                            <div class="sfly-3up-blocks slider carousel-responsive-modal">
+                                <div class="slfy-3up-block product-content">
+                                    <picture>
+                                        <source media="(max-width: 767px)" srcset="images/2up-silos_1_m.jpg">
+                                        <img src="images/2up-silos_1.png" style="width:100%" alt="" class="loading" data-was-processed="true">
+                                    </picture>
+                                    <div class="copy-inner">
+                                        <h4 class="uppercase">Lorem Ipsum</h4>
+                                        <p>From <span class="strikethru">$x.xx</span> <span class="highlighted-text">$x.xx</span></p>
+                                        <span class="cta-text">PERSONALIZE</span>
+                                    </div>
+                                    <a href=""></a>
+                                </div>
+                                <div class="slfy-3up-block product-content">
+                                    <picture>
+                                        <source media="(max-width: 767px)" srcset="images/2up-silos_1_m.jpg">
+                                        <img src="images/2up-silos_1.png" style="width:100%" alt="" class="loading" data-was-processed="true">
+                                    </picture>
+                                    <div class="copy-inner">
+                                        <h4 class="uppercase">Lorem Ipsum</h4>
+                                        <p>From <span class="strikethru">$x.xx</span> <span class="highlighted-text">$x.xx</span></p>
+                                        <span class="cta-text">PERSONALIZE</span>
+                                    </div>
+                                    <a href=""></a>
+                                </div>
+                                <div class="slfy-3up-block product-content">
+                                    <picture>
+                                        <source media="(max-width: 767px)" srcset="images/2up-silos_1_m.jpg">
+                                        <img src="images/2up-silos_1.png" style="width:100%" alt="" class="loading" data-was-processed="true">
+                                    </picture>
+                                    <div class="copy-inner">
+                                        <h4 class="uppercase">Lorem Ipsum</h4>
+                                        <p>From <span class="strikethru">$x.xx</span> <span class="highlighted-text">$x.xx</span></p>
+                                        <span class="cta-text">PERSONALIZE</span>
+                                    </div>
+                                    <a href=""></a>
+                                </div>
+                                <div class="slfy-3up-block product-content">
+                                    <picture>
+                                        <source media="(max-width: 767px)" srcset="images/2up-silos_1_m.jpg">
+                                        <img src="images/2up-silos_1.png" style="width:100%" alt="" class="loading" data-was-processed="true">
+                                    </picture>
+                                    <div class="copy-inner">
+                                        <h4 class="uppercase">Lorem Ipsum</h4>
+                                        <p>From <span class="strikethru">$x.xx</span> <span class="highlighted-text">$x.xx</span></p>
+                                        <span class="cta-text">PERSONALIZE</span>
+                                    </div>
+                                    <a href=""></a>
+                                </div>
+                                <div class="slfy-3up-block product-content">
+                                    <picture>
+                                        <source media="(max-width: 767px)" srcset="images/2up-silos_1_m.jpg">
+                                        <img src="images/2up-silos_1.png" style="width:100%" alt="" class="loading" data-was-processed="true">
+                                    </picture>
+                                    <div class="copy-inner">
+                                        <h4 class="uppercase">Lorem Ipsum</h4>
+                                        <p>From <span class="strikethru">$x.xx</span> <span class="highlighted-text">$x.xx</span></p>
+                                        <span class="cta-text">PERSONALIZE</span>
+                                    </div>
+                                    <a href=""></a>
+                                </div>
+                                <div class="slfy-3up-block product-content">
+                                    <picture>
+                                        <source media="(max-width: 767px)" srcset="images/2up-silos_1_m.jpg">
+                                        <img src="images/2up-silos_1.png" style="width:100%" alt="" class="loading" data-was-processed="true">
+                                    </picture>
+                                    <div class="copy-inner">
+                                        <h4 class="uppercase">Lorem Ipsum</h4>
+                                        <p>From <span class="strikethru">$x.xx</span> <span class="highlighted-text">$x.xx</span></p>
+                                        <span class="cta-text">PERSONALIZE</span>
+                                    </div>
+                                    <a href=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <script>
+
+                    var modal = document.getElementById("products-modal");
+                    function openModal() {
+                        modal.style.display = "block";
+                    }
+
+                    var modalClose = document.getElementById("modalCloseBtn");
+                    modalClose.onclick = function() {
+                        modal.style.display = "none";
+                    }
+
+                    window.onclick = function(event) {
+                        if (event.target == modal) {
+                            modal.style.display = "none";
+                        }
+                    }
+                </script>
+            </section><br><br>
+            <!-- End Modal Popup -->
+
+            <!-- Begin 3Up Modal -->
+            <section>
+                <hr>
+                <div class="sfly-2up sfly-3up-modal">
+                    <div class="sfly-3up-blocks">
+                        <div class="slfy-3up-block product-content">
+                            <picture>
+                                <source media="(max-width: 767px)" srcset="images/2up-silos_1_m.jpg">
+                                <img src="images/2up-silos_1.png" style="width:100%" alt="" class="loading" data-was-processed="true">
+                            </picture>
+                            <div class="copy-inner">
+                                <h4 class="uppercase">Lorem Ipsum</h4>
+                                <p>From <span class="strikethru">$x.xx</span> <span class="highlighted-text">$x.xx</span></p>
+                                <span class="cta-text">PERSONALIZE</span>
+                            </div>
+                            <a href=""></a>
+                        </div>
+                        <div class="slfy-3up-block product-content">
+                            <picture>
+                                <source media="(max-width: 767px)" srcset="images/2up-silos_1_m.jpg">
+                                <img src="images/2up-silos_1.png" style="width:100%" alt="" class="loading" data-was-processed="true">
+                            </picture>
+                            <div class="copy-inner">
+                                <h4 class="uppercase">Lorem Ipsum</h4>
+                                <p>From <span class="strikethru">$x.xx</span> <span class="highlighted-text">$x.xx</span></p>
+                                <span class="cta-text">PERSONALIZE</span>
+                            </div>
+                            <a href=""></a>
+                        </div>
+                        <div class="slfy-3up-block product-content">
+                            <picture>
+                                <source media="(max-width: 767px)" srcset="images/2up-silos_1_m.jpg">
+                                <img src="images/2up-silos_1.png" style="width:100%" alt="" class="loading" data-was-processed="true">
+                            </picture>
+                            <div class="copy-inner">
+                                <h4 class="uppercase">Lorem Ipsum</h4>
+                                <p>From <span class="strikethru">$x.xx</span> <span class="highlighted-text">$x.xx</span></p>
+                                <span class="cta-text">PERSONALIZE</span>
+                            </div>
+                            <a href=""></a>
+                        </div>
+                        <div class="slfy-3up-block product-content">
+                            <picture>
+                                <source media="(max-width: 767px)" srcset="images/2up-silos_1_m.jpg">
+                                <img src="images/2up-silos_1.png" style="width:100%" alt="" class="loading" data-was-processed="true">
+                            </picture>
+                            <div class="copy-inner">
+                                <h4 class="uppercase">Lorem Ipsum</h4>
+                                <p>From <span class="strikethru">$x.xx</span> <span class="highlighted-text">$x.xx</span></p>
+                                <span class="cta-text">PERSONALIZE</span>
+                            </div>
+                            <a href=""></a>
+                        </div>
+                        <div class="slfy-3up-block product-content">
+                            <picture>
+                                <source media="(max-width: 767px)" srcset="images/2up-silos_1_m.jpg">
+                                <img src="images/2up-silos_1.png" style="width:100%" alt="" class="loading" data-was-processed="true">
+                            </picture>
+                            <div class="copy-inner">
+                                <h4 class="uppercase">Lorem Ipsum</h4>
+                                <p>From <span class="strikethru">$x.xx</span> <span class="highlighted-text">$x.xx</span></p>
+                                <span class="cta-text">PERSONALIZE</span>
+                            </div>
+                            <a href=""></a>
+                        </div>
+                        <div class="slfy-3up-block product-content">
+                            <picture>
+                                <source media="(max-width: 767px)" srcset="images/2up-silos_1_m.jpg">
+                                <img src="images/2up-silos_1.png" style="width:100%" alt="" class="loading" data-was-processed="true">
+                            </picture>
+                            <div class="copy-inner">
+                                <h4 class="uppercase">Lorem Ipsum</h4>
+                                <p>From <span class="strikethru">$x.xx</span> <span class="highlighted-text">$x.xx</span></p>
+                                <span class="cta-text">PERSONALIZE</span>
+                            </div>
+                            <a href=""></a>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+            </section>
+            <!-- End 3Up Modal -->
+
+            <!-- Begin 3Up Modal Slider -->
+            <section>
+                Slider Mobile
+                <div class="sfly-2up sfly-3up-modal">
+                    <div class="sfly-3up-blocks slider carousel-responsive-modal">
+                        <div class="slfy-3up-block product-content">
+                            <picture>
+                                <source media="(max-width: 767px)" srcset="images/2up-silos_1_m.jpg">
+                                <img src="images/2up-silos_1.png" style="width:100%" alt="" class="loading" data-was-processed="true">
+                            </picture>
+                            <div class="copy-inner">
+                                <h4 class="uppercase">Lorem Ipsum</h4>
+                                <p>From <span class="strikethru">$x.xx</span> <span class="highlighted-text">$x.xx</span></p>
+                                <span class="cta-text">PERSONALIZE</span>
+                            </div>
+                            <a href=""></a>
+                        </div>
+                        <div class="slfy-3up-block product-content">
+                            <picture>
+                                <source media="(max-width: 767px)" srcset="images/2up-silos_1_m.jpg">
+                                <img src="images/2up-silos_1.png" style="width:100%" alt="" class="loading" data-was-processed="true">
+                            </picture>
+                            <div class="copy-inner">
+                                <h4 class="uppercase">Lorem Ipsum</h4>
+                                <p>From <span class="strikethru">$x.xx</span> <span class="highlighted-text">$x.xx</span></p>
+                                <span class="cta-text">PERSONALIZE</span>
+                            </div>
+                            <a href=""></a>
+                        </div>
+                        <div class="slfy-3up-block product-content">
+                            <picture>
+                                <source media="(max-width: 767px)" srcset="images/2up-silos_1_m.jpg">
+                                <img src="images/2up-silos_1.png" style="width:100%" alt="" class="loading" data-was-processed="true">
+                            </picture>
+                            <div class="copy-inner">
+                                <h4 class="uppercase">Lorem Ipsum</h4>
+                                <p>From <span class="strikethru">$x.xx</span> <span class="highlighted-text">$x.xx</span></p>
+                                <span class="cta-text">PERSONALIZE</span>
+                            </div>
+                            <a href=""></a>
+                        </div>
+                        <div class="slfy-3up-block product-content">
+                            <picture>
+                                <source media="(max-width: 767px)" srcset="images/2up-silos_1_m.jpg">
+                                <img src="images/2up-silos_1.png" style="width:100%" alt="" class="loading" data-was-processed="true">
+                            </picture>
+                            <div class="copy-inner">
+                                <h4 class="uppercase">Lorem Ipsum</h4>
+                                <p>From <span class="strikethru">$x.xx</span> <span class="highlighted-text">$x.xx</span></p>
+                                <span class="cta-text">PERSONALIZE</span>
+                            </div>
+                            <a href=""></a>
+                        </div>
+                        <div class="slfy-3up-block product-content">
+                            <picture>
+                                <source media="(max-width: 767px)" srcset="images/2up-silos_1_m.jpg">
+                                <img src="images/2up-silos_1.png" style="width:100%" alt="" class="loading" data-was-processed="true">
+                            </picture>
+                            <div class="copy-inner">
+                                <h4 class="uppercase">Lorem Ipsum</h4>
+                                <p>From <span class="strikethru">$x.xx</span> <span class="highlighted-text">$x.xx</span></p>
+                                <span class="cta-text">PERSONALIZE</span>
+                            </div>
+                            <a href=""></a>
+                        </div>
+                        <div class="slfy-3up-block product-content">
+                            <picture>
+                                <source media="(max-width: 767px)" srcset="images/2up-silos_1_m.jpg">
+                                <img src="images/2up-silos_1.png" style="width:100%" alt="" class="loading" data-was-processed="true">
+                            </picture>
+                            <div class="copy-inner">
+                                <h4 class="uppercase">Lorem Ipsum</h4>
+                                <p>From <span class="strikethru">$x.xx</span> <span class="highlighted-text">$x.xx</span></p>
+                                <span class="cta-text">PERSONALIZE</span>
+                            </div>
+                            <a href=""></a>
+                        </div>
+                    </div>
+                    <script>
+                        /* Initializes a slick carousel only on mobile screens */
+                        /* Slick needs no get Reinitialized on window Resize after it was destroyed */
+                        $(window).on('load resize orientationchange', function() {
+                            $('.carousel-responsive-modal').each(function(){
+                                var $carousel = $(this);
+                                if ($(window).width() > 991) {
+                                    if ($carousel.hasClass('slick-initialized')) {
+                                        $carousel.slick('unslick');
+                                    }
+                                }
+                                else {
+                                    if (!$carousel.hasClass('slick-initialized')) {
+                                        $carousel.slick({
+                                            slidesToShow: 1,
+                                            slidesToScroll: 1,
+                                            prevArrow: '<div class="slick-prev slick-arrow" style="display: block;"><img src="https://cdn-image.staticsfly.com/i/landingpages/graphics/arrow-orange-left.png"></div>',
+                                            nextArrow: '<div class="slick-next slick-arrow" style="display: block;"><img src="https://cdn-image.staticsfly.com/i/landingpages/graphics/arrow-orange-right.png"></div>',
+                                            responsive: [{
+                                                breakpoint: 991,
+                                                settings: {
+                                                    slidesToShow: 1,
+                                                    slidesToScroll: 1
+                                                }
+                                            }, {
+                                                breakpoint: 768,
+                                                settings: {
+                                                    slidesToShow: 1,
+                                                    slidesToScroll: 1
+                                                }
+                                            }]
+                                        });
+                                    }
+                                }
+                            });
+                        });
+                    </script>
+                </div>
+            </section>
+            <!-- End 3Up Modal Slider -->
+        </div>
+    </div>
+
+    <!-- <meta bob include-fragment app="universal-header" fragment-name="footer"> -->
+    <body>
+    </body>
+</html>

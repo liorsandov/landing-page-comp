@@ -1,0 +1,29 @@
+div.pageTitleContainer {
+  margin-bottom: 10px;
+  width: 100%; }
+
+.pagetitletext {
+  font-family: "Avenir LT W01 35 Light", Verdana, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  color: #58595b;
+  margin-left: 23px; }
+
+.sfly-main-window {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+  height: 500px; }
+
+.sfly-left-window {
+  width: 30%; }
+
+.sfly-right-window {
+  width: 70%; }
+
+.component-raw {
+  margin-bottom: 1em; }
+
+.hidden {
+  display: none; }
